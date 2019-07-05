@@ -1,3 +1,89 @@
-h1 {
+// MAIN HEADER & NAV
+header {
+    .component();
+
+    background-color: #000;
+    display: flex;
+    align-content: space-between;
+    justify-content: space-evenly;
+    box-shadow: 0 .5rem 5rem rgba(53, 53, 53, 0.541);
+
+    #logo {
+        width: 4rem;
+        margin: 0 1rem;
+    }
+}
+.header-nav {
+    width: 15rem;
+}
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    list-style: none;
+
+    li a {
+        text-decoration: none;
+        color: @lightBlue;
+        margin: 0 1rem 0 1rem;
+    }
+    .nav-item {
+        
+        &:hover {
+            cursor: pointer;
+            color: @warmBlack;
+            transition: .25s ease;
+        }
+    }
+}
+
+// LOGO SECTION
+#home {
+    .component();
+
+    #logo {
+        width: 5rem;
+        margin: 0 auto;
+    }
+    .background {
+        background-color: rgba(0, 0, 0, 0.377);
+        height: 15rem;
+        padding-top: 2.5rem;
+    }
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 50%;
+    height: 10rem;
+    padding-top: .75rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border-right: 1px solid @warmBlack;
+    border-left: 1px solid @warmBlack;
+}
+.main-header {
     .header();
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    width: 10rem;
+    margin: 0 auto;
+}
+
+// ABOUT 
+.about-container {
+    .component();
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.562);
+    padding: 1rem;
+
+    p {
+        padding: 1rem;
+        line-height: 1.75rem;
+    }
 }

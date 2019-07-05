@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Audiowide|Fugaz+One|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
     <title>Music App</title>
 </head>
 <body>
     <!-- MAIN HEADER -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="login/login.html">LOGIN</a></li>
-                <li><a href="#!">PRODUCT</a></li>
+        <img src="../assets/keyboard.svg" alt="logo" id="logo">
+        <nav class="header-nav">
+            <ul class="link-container">
+                <li><a href="login/login.html" class="nav-item">LOGIN</a></li>
+                <li><a href="#!" class="nav-item">PRODUCT</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Music App</h1>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <div class="background">
+            <div class="logo-container">
+                <img src="../assets/keyboard.svg" alt="logo" id="logo">
+                <h1 class="main-header">MÚSICA</h1>
+            </div>
+        </div>
+        <div class="about-container">
+            <h2>An online platform for the musician</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id dignissimos labore quas sunt corporis quis nulla, veniam illo alias quod.</p>
+            <button class="login-btn"><a href="login/login.html">Get Started</a></button>
+        </div>
+    </section>
 </body>
 </html>
