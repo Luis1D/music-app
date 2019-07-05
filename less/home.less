@@ -1,7 +1,6 @@
 // MAIN HEADER & NAV
 header {
     .component();
-
     background-color: #000;
     display: flex;
     align-content: space-between;
@@ -73,7 +72,7 @@ header {
 }
 
 // ABOUT 
-.about-container {
+.home-item {
     .component();
     width: 75%;
     margin: 0 auto;
@@ -86,4 +85,23 @@ header {
         padding: 1rem;
         line-height: 1.75rem;
     }
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 1.5rem;
+
+    h1 {
+        padding-top: .25rem;
+    }
+    h2 {
+        font-size: 1.25rem;
+        padding-top: .25rem;
+    }
+}
+.steps-img {
+    width: 3rem;
+    margin: 0 auto;
+    grid-column-start: 3;
 }
