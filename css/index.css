@@ -133,6 +133,9 @@ header #logo {
   grid-column-start: 3;
   margin-bottom: 1rem;
 }
+.flex-container {
+  margin: 0 auto;
+}
 @media (min-width: 1024px) {
   .flex-container {
     display: flex;
@@ -160,6 +163,12 @@ body {
   margin: 0 auto;
   margin-top: 2.5rem;
 }
+@media (min-width: 1024px) {
+  .login-header {
+    font-size: 2rem;
+    width: 30rem;
+  }
+}
 .form-container {
   width: 15rem;
   height: 15rem;
@@ -170,21 +179,43 @@ body {
   margin-bottom: 2rem;
   box-shadow: 0 0.5rem 3rem #000;
 }
+@media (min-width: 1024px) {
+  .form-container {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 .form-container .inputs {
   display: flex;
   flex-direction: column;
-  width: 10rem;
   margin: 0 auto;
   margin-top: 2.5rem;
 }
+@media (min-width: 1024px) {
+  .form-container .inputs {
+    margin-top: 4rem;
+  }
+}
 .form-container .inputs .form-item {
-  margin: 1rem 0;
+  width: 10rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding: 0.5rem 0.25rem;
   border: none;
   border-radius: 0.25rem;
   background-color: #000;
   color: #f0f9ff;
   outline: none;
+}
+@media (min-width: 1024px) {
+  .form-container .inputs .form-item {
+    padding: 1rem 0.25rem;
+    width: 15rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 .login-btn {
   width: 5rem;
@@ -209,4 +240,25 @@ a:hover {
 }
 .sign-up-txt {
   color: #d3d3d3;
+}
+#dashboard header {
+  height: 3rem;
+  padding: 0;
+}
+#dashboard header #logo {
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  padding: 0;
+}
+#dashboard header .link-container {
+  padding-top: 1rem;
+}
+.container {
+  width: 25rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #444444;
 }
